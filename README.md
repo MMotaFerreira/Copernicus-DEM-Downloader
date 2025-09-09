@@ -17,10 +17,9 @@ Supports **parallel downloads** (all cores minus one) for efficient bulk retriev
 ## 🔑 Getting Credentials
 To download Copernicus DEM tiles you need an account at [dataspace.copernicus.eu](https://dataspace.copernicus.eu/):
 
-1. Register for a free account.  
-2. Go to your **User Profile → Access Keys**.  
-3. Generate an **Access Key** and **Secret Key** for S3 API access.  
-4. Insert these keys in the script:
+1. Register for a free account [here](https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/auth?client_id=cdse-public&response_type=code&scope=openid&redirect_uri=https%3A//dataspace.copernicus.eu/account/confirmed/1).  
+2. Generate an **Access Key** and **Secret Key** for S3 API access [here](https://eodata-s3keysmanager.dataspace.copernicus.eu/).  
+3. Insert these keys in the script:
    ```python
    AWS_ACCESS_KEY = "YOUR_ACCESS_KEY"
    AWS_SECRET_KEY = "YOUR_SECRET_KEY"
